@@ -1,5 +1,9 @@
 # Evidence Hub
 
+[![CI](https://github.com/welkerfernandes/evidence-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/welkerfernandes/evidence-hub/actions)
+
+![Dashboard preview](docs/dashboard.png)
+
 > Conhecimento corporativo com evidências e isolamento
 
 Uma busca corporativa precisa citar documentos e impedir que uma empresa consulte a base de outra.
@@ -78,3 +82,5 @@ Adicionar avaliação rotulada com recall@k e MRR; PostgreSQL com RLS; índice h
 ## Verificação em navegador
 
 O job `browser` da CI executa fluxos em Chromium, verifica a versão de 390 px e publica capturas como artifact `dashboard-screenshots`. Execute `npm install` em `ui/`, `npx playwright install chromium` e `node ui/smoke.cjs` na raiz com a API em localhost:8000 para repetir.
+
+Consulte o [registro de validação](docs/validation.md) e a [captura mobile](docs/mobile.png).
